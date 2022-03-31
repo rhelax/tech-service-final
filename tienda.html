@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/08c3717c0d.js" crossorigin="anonymous"></script>
+    <title>Tech-Services Shop</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <button id="boton-contacto" type="button" onclick="window.location.href='/contacto.html'">
+            <i class="fa-solid fa-address-book"></i> Contacto
+        </button>
+        <a href="tel:32-837465">
+            <button id="boton-telefono" type="button">
+                <i class="fas fa-phone"></i>
+            </button>
+        </a>
+        <div class="row align-items-center start-lg middle-lg center-xs">
+            <div class="menav col-xs-12 col-lg-3">
+                <img src="img/logo.png" alt="Logo tech-service">
+            </div>
+            <div class="menav col-xs-12 col-lg-2">
+                <a href="index.html">INICIO</a>
+            </div>
+            <div class="menav col-xs-12 col-lg-2">
+                <a href="/index.html#tit-section-b">NOSOTROS</a>
+            </div>
+            <div class="menav col-xs-12 col-lg-2">
+                <a href="tienda.html">TIENDA</a>
+            </div>
+            <div class="menav col-xs-12 col-lg-2">
+                <a href="valoraciones.html">CALIFICACIONES</a>
+            </div>
+            <div class="menuav col-xs-4 col-lg-3">
+                <img src="img/logo.png" alt="Logo tech-service">
+            </div>
+            <div class="menuav col-xs-4 col-lg-3">
+                <p>
+                    <a class="hamburguer" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        <i class="fa-solid fa-align-justify fa-3x"></i>
+                    </a>
+                </p>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item"><a href="index.html">INICIO</a></li>
+                            <li class="list-group-item"><a href="/index.html#tit-section-b">NOSOTROS</a></li>
+                            <li class="list-group-item"><a href="tienda.html">TIENDA</a></li>
+                            <li class="list-group-item"><a href="valoraciones.html">CALIFICACIONES</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="titulo-tienda" class="row">
+        <div class="col-lg-10">
+            <h1>Tienda Online</h1>
+        </div>
+        <div class="col-lg-2">
+            <button id="boton-carrito" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+                aria-controls="offcanvasBottom">Carrito <i class="fa-solid fa-cart-arrow-down fa-2x"></i></button>
+
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasBottomLabel">Carrito</h5>
+            <a href="detalle.html">
+                <button id="boton-compra"><i class="fa-solid fa-greater-than"></i>COMPRAR<i class="fa-solid fa-less-than"></i></button>
+            </a>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <hr>
+        <div class="offcanvas-body medium">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Productos</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Acción</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                </thead>
+                <tbody id="items"></tbody>
+                <tfoot>
+                    <tr id="footer">
+                        <th scope="row" colspan="5">Carrito vacío - Agregue Productos!</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <div class="row" id="cards"></div>
+    <template id="template-footer">
+        <th scope="row" colspan="2">Total Productos</th>
+        <td></td>
+        <td>
+            <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+                Vaciar Carrito
+            </button>
+        </td>
+        <td class="font-weight-bold">$ <span></span></td>
+    </template>
+
+    <template id="template-carrito">
+        <tr>
+            <th scope="row"></th>
+            <td></td>
+            <td></td>
+            <td>
+                <button class="btn btn-info btn-sm">
+                    +
+                </button>
+                <button class="btn btn-danger btn-sm">
+                    -
+                </button>
+            </td>
+            <td>$ <span>500</span></td>
+        </tr>
+    </template>
+    <template id="template-card">
+        <div class="col-6 mb-2 col-md-3">
+            <div class="card">
+                <img src="" alt="Cotizaciones" class="card-img-top">
+                <div class="card-body">
+                    <h4></h4>
+                    <h5></h5>
+                    <p>$<span></span></p>
+                    <button onclick="mensaje()" class="btn btn-dark">Agregar</button>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <footer>
+        <div id="sub-menu" class="row">
+            <div class="col-xs-12 col-lg-2">
+                <a href="contacto.html"><b>SERVICIO TECNICO</b></a><br>
+            </div>
+            <div class="col-xs-12 col-lg-3">
+                <a href="#tit-section-b"><b>NOSOTROS</b></a><br>
+            </div>
+            <div class="col-xs-12 col-lg-3">
+                <a href="calcula.html"><b>HERRAMIENTAS</b></a><br>
+            </div>
+            <div class="col-xs-12 col-lg-3">
+                <a href="mailto:tech-service@tech.cl"><b>EMAIL: tech-service@tech.cl</b></a><br>
+            </div>
+        </div>
+        <div id="tit-section-c">
+            <a>UBICACION</a>
+            <p><b>_______</b></p>
+        </div>
+        <iframe
+            src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Av. Valparaíso 500-602, Viña del Mar, Valparaíso&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="js/app.js"></script>
+    <script type="text/javascript">
+        function mensaje() {
+            swal({
+                position: 'top-end',
+                icon: 'success',
+                text: 'Producto agregado correctamente',
+                buttons: false,
+                timer: 1500
+            })
+        }
+    </script>
+</body>
+
+</html>

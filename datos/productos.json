@@ -1,0 +1,142 @@
+[
+    {
+      "precio": 39900,
+      "id": 1,
+      "title": "ASRock B360M/OEM",
+      "categoria": "Placa Madre",
+      "thumbnailUrl": "https://www.pcfactory.cl/public/foto/37643/1.jpg?t=1631073359"
+    },
+    {
+      "precio": 53000,
+      "id": 2,
+      "title": "Gigabyte H310M DS2 2.0",
+      "categoria": "Placa Madre",
+      "thumbnailUrl": "https://www.pcfactory.cl/public/foto/37643/1.jpg?t=1631073359"
+    },
+    {
+      "precio": 81500,
+      "id": 3,
+      "title": "ASUS PRIME H510M-E",
+      "categoria": "Placa Madre",
+      "thumbnailUrl": "https://www.pcfactory.cl/public/foto/37643/1.jpg?t=1631073359"
+    },
+    {
+      "precio": 111900,
+      "id": 4,
+      "title": "Gigabyte B550M GAMING",
+      "categoria": "Placa Madre",
+      "thumbnailUrl": "https://www.pcfactory.cl/public/foto/37643/1.jpg?t=1631073359"
+    },
+    {
+      "precio": 44900,
+      "id": 5,
+      "title": "Intel Celeron G5905",
+      "categoria": "Procesador",
+      "thumbnailUrl": "https://www.pcfactory.cl/public/foto/31404/1.jpg?t=1631307179"
+    },
+    {
+      "precio": 83000,
+      "id": 6,
+      "title": "Intel Core i3-10100F",
+      "categoria": "Procesador",
+      "thumbnailUrl": "https://www.pcfactory.cl/public/foto/31404/1.jpg?t=1631307179"
+    },
+    {
+      "precio": 146833,
+      "id": 7,
+      "title": "Intel Core i5-10400F",
+      "categoria": "Procesador",
+      "thumbnailUrl": "https://www.pcfactory.cl/public/foto/31404/1.jpg?t=1631307179"
+    },
+    {
+      "precio": 244970,
+      "id": 8,
+      "title": "Intel Core i7-9700F",
+      "categoria": "Procesador",
+      "thumbnailUrl": "https://www.pcfactory.cl/public/foto/31404/1.jpg?t=1631307179"
+    },
+    {
+      "precio": 32000,
+      "id": 9,
+      "title": "4GB Ram",
+      "categoria": "Ram",
+      "thumbnailUrl": "https://www.pcfactory.cl/public/foto/38221/1.jpg?t=1631070602"
+    },
+    {
+      "precio": 51000,
+      "id": 10,
+      "title": "8GB Ram",
+      "categoria": "Ram",
+      "thumbnailUrl": "https://www.pcfactory.cl/public/foto/38221/1.jpg?t=1631070602"
+    },
+    {
+      "precio": 98000,
+      "id": 11,
+      "title": "16GB Ram",
+      "categoria": "Ram",
+      "thumbnailUrl": "https://www.pcfactory.cl/public/foto/38221/1.jpg?t=1631070602"
+    },
+    {
+      "precio": 192000,
+      "id": 12,
+      "title": "32GB Ram",
+      "categoria": "Ram",
+      "thumbnailUrl": "https://www.pcfactory.cl/public/foto/38221/1.jpg?t=1631070602"
+    },
+    {
+      "precio": 32000,
+      "id": 13,
+      "title": "1TB HDD",
+      "categoria": "Almacenamiento",
+      "thumbnailUrl": "https://www.pcfactory.cl/public/foto/13696/1.jpg?t=1631020285"
+    },
+    {
+      "precio": 51000,
+      "id": 14,
+      "title": "2TB HDD",
+      "categoria": "Almacenamiento",
+      "thumbnailUrl": "https://www.pcfactory.cl/public/foto/34611/1.jpg?t=1631088387"
+    },
+    {
+      "precio": 98000,
+      "id": 15,
+      "title": "1TB SSD-NVME",
+      "categoria": "Almacenamiento",
+      "thumbnailUrl": "https://www.pcfactory.cl/public/foto/37504/1.jpg?t=1631073887"
+    },
+    {
+      "precio": 192000,
+      "id": 16,
+      "title": "2TB SSD-NVME",
+      "categoria": "Almacenamiento",
+      "thumbnailUrl": "https://www.pcfactory.cl/public/foto/41851/1.jpg?t=1631046390"
+    },
+    {
+      "precio": 32000,
+      "id": 17,
+      "title": "400 Watts 80 plus White",
+      "categoria": "Fuente de poder",
+      "thumbnailUrl": "https://www.pcfactory.cl/public/foto/41719/1.jpg?t=1631054190"
+    },
+    {
+      "precio": 51000,
+      "id": 18,
+      "title": "450 Watts 80 plus bronze",
+      "categoria": "Fuente de poder",
+      "thumbnailUrl": "https://www.pcfactory.cl/public/foto/41719/1.jpg?t=1631054190"
+    },
+    {
+      "precio": 98000,
+      "id": 19,
+      "title": "700 Watts 80 plus bronze",
+      "categoria": "Fuente de poder",
+      "thumbnailUrl": "https://www.pcfactory.cl/public/foto/41719/1.jpg?t=1631054190"
+    },
+    {
+      "precio": 192000,
+      "id": 20,
+      "title": "800 Watts 80 plus gold",
+      "categoria": "Fuente de poder",
+      "thumbnailUrl": "https://www.pcfactory.cl/public/foto/41719/1.jpg?t=1631054190"
+    }
+]
